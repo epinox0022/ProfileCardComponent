@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Verydark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+}
+
+body {
+  overflow: hidden;
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--Dark-cyan);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.div-circle-top {
+  position: absolute;
+  top: -78%;
+  left: -25%;
+}
+
+.div-circle-bottom {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+/* IMAGE AREA */
+
+.div-card {
+  position: relative;
+  z-index: 10;
+}
+
+.div-img {
+  position: absolute;
+  top: 23%;
+  left: 38%;
+}
+
+.virtor {
+  border-radius: 50%;
+  border: 5px white solid;
+}
+
+.h1-v {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.h1-v span {
+  padding-left: 5px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.london {
+  font-size: 18px;
+  font-weight: 300;
+  padding-top: 10px;
+}
+
+.div-first-section {
+  width: 400px;
+  height: 150px;
+  background: url(images/bg-pattern-card.svg);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.div-second-section {
+  padding-top: 70px;
+  width: 400px;
+  height: 180px;
+  background-color: white;
+  text-align: center;
+}
+
+.div-third-section {
+  width: 400px;
+  height: 100px;
+  background-color: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-top: 1px rgb(196, 196, 196) solid;
+}
+/* nice
+ */
+.stat {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.low-stat {
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding-top: 4px;
+}
+
+.div-stat-one,
+.div-stat-two,
+.div-stat-three {
+  text-align: center;
+}
+
+@media (max-width: 375px) {
+  .main {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .div-circle-top {
+    position: absolute;
+    top: -78%;
+    left: -140%;
+  }
+
+  .div-circle-bottom {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+  }
+
+  .top {
+    /* height: 50%; */
+    width: 700px;
+  }
+
+  .bottom {
+    /* height: 50%; */
+    width: 800px;
+  }
+
+  .div-card {
+    position: relative;
+    width: 80%;
+  }
+
+  .div-first-section {
+    width: 100%;
+    height: 130px;
+  }
+
+  .div-second-section {
+    width: 100%;
+    height: 150px;
+  }
+
+  .div-third-section {
+    width: 100%;
+    height: 80px;
+  }
+
+  .div-img {
+    position: absolute;
+    top: 20%;
+    left: 35%;
+  }
+
+  .h1-v,
+  .h1-v span {
+    letter-spacing: 0.3px;
+    font-size: 18px;
+  }
+
+  .london {
+    font-size: 15px;
+  }
+
+  .stat {
+    font-size: 14px;
+  }
+
+  .low-stat {
+    font-size: 10px;
+  }
+}
